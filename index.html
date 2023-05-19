@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel="stylesheet" href="font/css/all.css" />
+    <link rel="icon" href="images/image1.png" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img src="images/image2jpg.jpg" alt="company logo" class="logo" />
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">Services</a></li>
+          <li><a href="">Application Forms</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+        <div class="icons">
+          <a href="#"
+            ><i class="fa-solid fa-magnifying-glass" style="color: red"></i
+          ></a>
+        </div>
+      </nav>
+    </header>
+    <section>
+      <div class="hero">
+        <h1>What we do</h1>
+        <p>We register everyone who needs to be registered</p>
+        <button>Learn more</button>
+      </div>
+    </section>
+    <main>
+      <div class="container">
+        <form action="">
+          <label for="fname">Full Name </label>
+          <input
+            type="text"
+            id="fname"
+            name="fname"
+            placeholder="Enter your Full name"
+            required
+          /><br /><br />
+          <label for="email">Email address </label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter Email address"
+            required
+          /><br /><br />
+          <label for="pwd">Password </label>
+          <input
+            type="password"
+            id="pwd"
+            name="pwd"
+            placeholder="Enter Password"
+            required
+          /><br /><br />
+          <label for="cpwd">Confirm Password </label>
+          <input
+            type="password"
+            id="cpwd"
+            name="cpwd"
+            placeholder="Confirm Password"
+            required
+          /><br /><br />
+          <label for="date">Date of Birth </label>
+          <input type="date" id="date" name="date" required /><br /><br />
+          <label for="gnd" required>Gender</label><br /><br />
+          <label for="gndm">Male</label>
+          <input type="radio" id="gndm" name="gndm" />
+          <label for="gndf">Female</label>
+          <input type="radio" id="gndf" name="gndm" /><br /><br />
+          <label for="country">Country</label>
+          <select name="country" id="country" required>
+            <option value="Kenya">Kenya</option>
+            <option value="Uganda">Uganda</option>
+            <option value="Somalia">Somalia</option>
+            <option value="Rwanda">Rwanda</option>
+            <option value="Tanzania">Tanzania</option></select
+          ><br /><br />
+          <label for="term">Terms and condition</label>
+          <input type="checkbox" id="chk" name="chk" /><br /><br />
+          <label for="msg">Message</label>
+          <textarea
+            name="message"
+            id="msg"
+            cols="50"
+            rows="15"
+            placeholder="Send a message"
+            required
+          ></textarea
+          ><br /><br />
+          <input type="submit" id="sub" name="sub" />
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
